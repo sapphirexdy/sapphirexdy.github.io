@@ -394,7 +394,7 @@ ninja.data = [{
             },},{id: "news-i-was-selected-for-china-s-top-notch-students-training-program-2-0-national-basic-disciplines",
           title: 'I was selected for China’s Top-notch Students Training Program 2.0 (National Basic Disciplines)....',
           description: "",
-          section: "News",},{id: "news-i-received-the-travel-award-and-being-selected-for-the-doctoral-forum-at-the-2025-annual-conference-of-the-youth-statisticians-association-of-the-national-industrial-statistics-teaching-and-research-association-and-the-3rd-international-symposium-on-statistical-theory-and-its-applications-link-1-the-award-was-reported-by-a-well-known-academic-platform-gouxiong-hui-link-2",
+          section: "News",},{id: "news-i-received-the-travel-award-and-being-selected-for-the-doctoral-forum-at-the-2025-annual-conference-of-the-youth-statisticians-association-of-the-national-industrial-statistics-teaching-and-research-association-and-the-3rd-international-symposium-on-statistical-theory-and-its-applications-link-the-award-was-reported-by-a-well-known-academic-platform-gouxiong-hui",
           title: 'I received the Travel Award and being selected for the Doctoral Forum at...',
           description: "",
           section: "News",},{id: "news-i-awarded-an-outstanding-poster-award-at-the-9th-student-forum-of-the-china-society-for-industrial-and-applied-mathematics-csiam",
