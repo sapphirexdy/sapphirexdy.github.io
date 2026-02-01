@@ -11,9 +11,7 @@ cv:
       username: "sapphirexdy"
     - network: ORCID
       username: "0009-0005-9679-1832"
-    # 注意：很多主题/脚本不认“Google Scholar”这个 network 名
-    # 如果你发现仍然报错，就先把下面这一段注释掉
-    - network: GoogleScholar
+    - network: Google Scholar
       username: "91tAPrQAAAAJ"
 
   address:
