@@ -391,16 +391,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-i-was-selected-for-china-s-top-notch-students-training-program-2-0-national-basic-disciplines",
+          title: 'I was selected for China’s Top-notch Students Training Program 2.0 (National Basic Disciplines)....',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-i-received-the-travel-award-and-being-selected-for-the-doctoral-forum-at-the-2025-annual-conference-of-the-youth-statisticians-association-of-the-national-industrial-statistics-teaching-and-research-association-and-the-3rd-international-symposium-on-statistical-theory-and-its-applications-link-1-the-award-was-reported-by-a-well-known-academic-platform-gouxiong-hui-link-2",
+          title: 'I received the Travel Award and being selected for the Doctoral Forum at...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-i-received-an-outstanding-poster-award-at-the-9th-student-forum-of-the-contentreference-oaicite-0-index-0-link",
+          title: 'I received an Outstanding Poster Award at the 9th Student Forum of the...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
