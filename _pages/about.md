@@ -27,10 +27,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Welcome to my page! My name is Dunyao Xue, a second-year PhD student at the Institute of Statistics and Big Data, Renmin University of China, advised by Dr. Cheng Meng.
+Welcome to my page! My name is Dunyao Xue, a second-year PhD student at the Institute of Statistics and Big Data, Renmin University of China, advised by [Dr. Cheng Meng](https://cheng-bdal.github.io//).
 
-Prior to this, I received a BSc degree in Mathematics from the `Cuiying Honors School`, Lanzhou University.
+Prior to this, I received a BSc degree in Mathematics from the [Cuiying Honors School](https://cycollege.lzu.edu.cn/), Lanzhou University.
 
 My current research focuses on `big data compression`, `optimal transport`, and `large language model architectures`.
 
-If you are interested in my research, feel free to drop me an email
+If you are interested in my research, feel free to drop me an email!
