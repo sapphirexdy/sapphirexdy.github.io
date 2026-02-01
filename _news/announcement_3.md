@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2025-10-26
 inline: true
-related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+I received an Outstanding Poster Award at the 9th Student Forum of the :contentReference[oaicite:0]{index=0}. [Link](https://www.csiam.org.cn/1003/202510/2557.html)
+
