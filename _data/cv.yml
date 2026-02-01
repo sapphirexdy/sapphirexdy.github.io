@@ -1,75 +1,87 @@
 cv:
-  name: Dunyao Xue
-  label: PhD student
-  email: xuedunyao1202@ruc.edu.cn
-  location: Zhongguancun Campus, Renmin University Of China, Beijing, P.R. China.
-  image: "" # 你可以添加个人照片的路径
-  summary: A PhD student in statistics and AI.
+  name: "Dunyao Xue"
+  label: "PhD student"
+  email: "xuedunyao1202@ruc.edu.cn"
+  location: "Zhongguancun Campus, Renmin University of China, Beijing, P.R. China."
+  image: ""
+  summary: ""
 
   social_networks:
     - network: GitHub
-      username: sapphirexdy
+      username: "sapphirexdy"
     - network: ORCID
-      username: 0009-0005-9679-1832
-    - network: Google Scholar
-      username: https://scholar.google.com.hk/citations?user=91tAPrQAAAAJ&hl=zh-CN
+      username: "0009-0005-9679-1832"
+    # 注意：很多主题/脚本不认“Google Scholar”这个 network 名
+    # 如果你发现仍然报错，就先把下面这一段注释掉
+    - network: GoogleScholar
+      username: "91tAPrQAAAAJ"
 
   address:
-    street: Zhongguancun Campus, Renmin University Of China
-    city: Beijing
-    region: P.R. China
-    postalCode: N/A
-    countryCode: CN
+    street: "Zhongguancun Campus, Renmin University of China"
+    city: "Beijing"
+    region: "P.R. China"
+    postalCode: ""
+    countryCode: "CN"
 
   sections:
     Education:
-      - institution: School of Mathematics and Statistics, Lanzhou University
-        location: Lanzhou, China
-        url: https://www.lzu.edu.cn/
-        area: Mathematics and Applied Mathematics
-        studyType: First Year Undergraduate
-        start_date: 2020-09-01
-        end_date: 2021-06-01
+      - institution: "School of Mathematics and Statistics, Lanzhou University"
+        location: "Lanzhou, China"
+        url: "https://www.lzu.edu.cn/"
+        area: "Mathematics and Applied Mathematics"
+        studyType: "Undergraduate (First Year)"
+        start_date: "2020-09-01"
+        end_date: "2021-06-30"
         score: ""
-        courses: "Mathematics Analysis, Advanced Linear Algebra, Analytic Geometry"
+        courses: ""
         highlights:
-          - First Year Undergraduate
+          - "First year undergraduate in Mathematics and Applied Mathematics."
 
-      - institution: Cuiying Honors College, Lanzhou University
-        location: Lanzhou, China
-        area: Mathematics
-        studyType: Undergraduate
-        start_date: 2021-09-01
-        end_date: 2024-06-01
+      - institution: "Cuiying Honors College, Lanzhou University"
+        location: "Lanzhou, China"
+        url: "https://www.lzu.edu.cn/"
+        area: "Mathematics (Cuiying Class)"
+        studyType: "Undergraduate"
+        start_date: "2021-09-01"
+        end_date: "2024-06-30"
+        score: "90.63/100.00"
+        courses: ""
         highlights:
-          - Candidate of China’s Top-Notch Undergraduate Training Program—Cuiying Honors College
-          - Overall Score: 90.63/100.00, Rank: 4/136 (Top 3%)
-          - Related Courses: Pure Math, Statistics, Applied Math, CS
+          - "Candidate of China’s Top-Notch Undergraduate Training Program 2.0 (Cuiying Honors College)."
+          - "Rank: 4/136 (Top 3%)."
+          - "Key coursework: Real Analysis, Abstract Algebra, Commutative Algebra, Probability Theory, Mathematical Statistics, Numerical Analysis, Operations Research, Mathematical Modeling, C/C++ Programming, Data Analysis & Visualization."
 
-      - institution: Institute of Statistics and Big Data, Renmin University of China
-        location: Beijing, China
-        area: Statistics
-        studyType: PhD student
-        start_date: 2024-09-01
-        end_date: ongoing
+      - institution: "Institute of Statistics and Big Data, Renmin University of China"
+        location: "Beijing, China"
+        url: "https://www.ruc.edu.cn/"
+        area: "Statistics"
+        studyType: "PhD student"
+        start_date: "2024-09-01"
+        end_date: "present"
+        score: ""
+        courses: ""
         highlights:
-          - Supervised by A.P. Cheng Meng
+          - "Supervised by A.P. Cheng Meng."
 
     Languages:
-      - name: Mandarin
+      - name: "Mandarin"
         summary: "Native speaker"
-      - name: English
+      - name: "English"
         summary: "Fluent"
 
-    # Interests:
-    #   - name: Snowboarding
-    #   - name: Badminton
-    #   - name: Table Games
-    #   - name: Basketball
-
-
-
-
+    Interests:
+      - name: "Snowboarding"
+        icon: ""
+        keywords: "Intermediate; practicing figure-eight carving."
+      - name: "Badminton"
+        icon: ""
+        keywords: "Enthusiast"
+      - name: "Board Games"
+        icon: ""
+        keywords: "Deception: Murder in Hong Kong"
+      - name: "Basketball"
+        icon: ""
+        keywords: "Team member, School of Mathematics and Statistics, Lanzhou University"
 # cv:
 #   name: Albert Einstein
 #   label: Scientist
