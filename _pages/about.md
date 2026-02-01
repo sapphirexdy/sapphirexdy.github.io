@@ -3,8 +3,7 @@ layout: about
 title: About
 permalink: /
 subtitle: >
-  Second-year PhD student at the Institute of Statistics and Big Data,
-  <a href="https://www.ruc.edu.cn/" target="_blank" rel="noopener">Renmin University of China</a>.
+   Staying optimistic and curious.
 
 profile:
   align: right
