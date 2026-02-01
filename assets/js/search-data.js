@@ -17,7 +17,7 @@ ninja.data = [{
             window.location.href = "/publications/";
           },
         },{id: "nav-cv",
-          title: "cv",
+          title: "CV",
           description: "You can get a detailed CV by the top pdf download button.",
           section: "Navigation",
           handler: () => {
