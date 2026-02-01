@@ -3,7 +3,7 @@ cv:
   label: PhD student
   email: xuedunyao1202@ruc.edu.cn
   location: Zhongguancun Campus, Renmin University Of China, Beijing, P.R. China.
-  # image: "" # 你可以添加个人照片的路径
+  image: "" # 你可以添加个人照片的路径
   summary: A PhD student in statistics and AI.
 
   social_networks:
@@ -61,11 +61,11 @@ cv:
       - name: English
         summary: "Fluent"
 
-    Interests:
-      - name: Snowboarding
-      - name: Badminton
-      - name: Table Games
-      - name: Basketball
+    # Interests:
+    #   - name: Snowboarding
+    #   - name: Badminton
+    #   - name: Table Games
+    #   - name: Basketball
 
 
 
