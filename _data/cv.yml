@@ -47,7 +47,6 @@ cv:
         highlights:
           - "Candidate of China’s Top-Notch Undergraduate Training Program 2.0 (Cuiying Honors College)."
           - "Rank: 4/136 (Top 3%)."
-          - "Key coursework: Real Analysis, Abstract Algebra, Commutative Algebra, Probability Theory, Mathematical Statistics, Numerical Analysis, Operations Research, Mathematical Modeling, C/C++ Programming, Data Analysis & Visualization."
 
       - institution: "Institute of Statistics and Big Data, Renmin University of China"
         location: "Beijing, China"
@@ -70,16 +69,16 @@ cv:
     Interests:
       - name: "Snowboarding"
         icon: ""
-        keywords: "Intermediate; practicing figure-eight carving."
+        keywords: "Entering advanced level of carving."
       - name: "Badminton"
         icon: ""
-        keywords: "Enthusiast"
+        keywords: "Used to be a member of the cuiying college team of LZU"
       - name: "Table Games"
         icon: ""
         keywords: "German strategy"
       - name: "Basketball"
         icon: ""
-        keywords: "Team member, School of Mathematics and Statistics, Lanzhou University"
+        keywords: "Used to be a member of the mathematics college team of LZU"
 # cv:
 #   name: Albert Einstein
 #   label: Scientist
