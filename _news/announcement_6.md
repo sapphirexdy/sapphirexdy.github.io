@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-3-18
+date: 2026-5-1
 inline: true
 related_posts: false
 ---
 
-Our paper [“Core-elements Subsampling for Alternating Least Squares”](https://arxiv.org/abs/2509.18024) was accepted by JCGS.🔥
+Our paper [“Breaking the Echo Chamber: A Dynamic Ensemble Pruning Perspective on MoE”] was accepted by ICML.🔥
