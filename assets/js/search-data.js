@@ -407,7 +407,7 @@ ninja.data = [{
           title: 'Our paper “Core-elements Subsampling for Alternating Least Squares” was accepted by JCGS.🔥',
           description: "",
           section: "News",},{id: "news-our-paper-breaking-the-echo-chamber-a-dynamic-ensemble-pruning-perspective-on-moe-was-accepted-by-icml",
-          title: 'Our paper [“Breaking the Echo Chamber: A Dynamic Ensemble Pruning Perspective on MoE”]...',
+          title: 'Our paper “Breaking the Echo Chamber: A Dynamic Ensemble Pruning Perspective on MoE”...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
