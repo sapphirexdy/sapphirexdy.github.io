@@ -1,120 +1,72 @@
 ---
 layout: default
 ---
-<div class="post home-page">
-  <header class="post-header home-hero">
-    <div class="home-hero-copy">
-      <p class="home-kicker">PhD student &middot; Statistics and AI</p>
-      <h1 class="post-title">
-        {% if site.title == 'blank' %}
-          <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-          {{ site.last_name }}
-        {% else %}
-          {{ site.title }}
-        {% endif %}
-      </h1>
-      <p class="desc">{{ page.subtitle }}</p>
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      {% if site.title == 'blank' %}
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        {{ site.last_name }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+    <p class="desc">{{ page.subtitle }}</p>
+  </header>
 
-      <div class="home-actions" aria-label="Primary links">
-        <a class="home-action home-action-primary" href="mailto:xuedunyao1202@ruc.edu.cn">
-          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-          <span>Email</span>
-        </a>
-        <a class="home-action" href="{{ '/publications/' | relative_url }}">
-          <i class="fa-solid fa-scroll" aria-hidden="true"></i>
-          <span>Publications</span>
-        </a>
-        <a class="home-action" href="{{ '/cv/' | relative_url }}">
-          <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
-          <span>CV</span>
-        </a>
-      </div>
-
-      <div class="home-snapshot" aria-label="Research snapshot">
-        <div>
-          <span>Based at</span>
-          <strong>Renmin University of China</strong>
-        </div>
-        <div>
-          <span>Recent venues</span>
-          <strong>ICML, ICLR, JCGS</strong>
-        </div>
-        <div>
-          <span>Focus</span>
-          <strong>Compression, OT, LLMs</strong>
-        </div>
-      </div>
-    </div>
-
+  <article>
     {% if page.profile %}
-      <aside class="home-portrait" aria-label="Profile portrait and affiliation">
+      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'home-portrait-img img-fluid z-depth-1 rounded-circle' %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
           {% else %}
-            {% assign profile_image_class = 'home-portrait-img img-fluid z-depth-1' %}
+            {% assign profile_image_class = 'img-fluid z-depth-1
+      rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) 330px, (min-width: 768px) 32vw, 88vw{% endcapture %}
-          <div class="home-portrait-frame">
-            {%
-              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-              cache_bust=true
-            %}
-          </div>
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+      30vw, 95vw"{% endcapture %}
+          {%
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+            cache_bust=true
+          %}
         {% endif %}
         {% if page.profile.more_info %}
-          <div class="more-info home-profile-info">{{ page.profile.more_info }}</div>
+          <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
-      </aside>
+      </div>
     {% endif %}
-  </header>
 
-  <article class="home-body">
-    <div class="clearfix home-intro">{{ content }}</div>
+    <div class="clearfix">{{ content }}</div>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <section class="home-section home-news-section">
-        <div class="home-section-heading">
-          <h2>
-            <a href="{{ '/news/' | relative_url }}">news</a>
-          </h2>
-          <a class="home-section-link" href="{{ '/news/' | relative_url }}">All updates</a>
-        </div>
-        {% include news.liquid limit=true %}
-      </section>
+      <h2>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+      </h2>
+      {% include news.liquid limit=true %}
     {% endif %}
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
-      <section class="home-section">
-        <div class="home-section-heading">
-          <h2>
-            <a href="{{ '/blog/' | relative_url }}">latest posts</a>
-          </h2>
-          <a class="home-section-link" href="{{ '/blog/' | relative_url }}">All posts</a>
-        </div>
-        {% include latest_posts.liquid %}
-      </section>
+      <h2>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+      </h2>
+      {% include latest_posts.liquid %}
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <section class="home-section home-publications-section">
-        <div class="home-section-heading">
-          <h2>
-            <a href="{{ '/publications/' | relative_url }}">selected publications</a>
-          </h2>
-          <a class="home-section-link" href="{{ '/publications/' | relative_url }}">Full list</a>
-        </div>
-        {% include selected_papers.liquid %}
-      </section>
+      <h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+      </h2>
+      {% include selected_papers.liquid %}
     {% endif %}
 
     <!-- Social -->
     {% if page.social %}
-      <div class="social home-social">
+      <div class="social">
         <div class="contact-icons">{% social_links %}</div>
 
         <div class="contact-note">{{ site.contact_note }}</div>
