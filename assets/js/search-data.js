@@ -468,13 +468,6 @@ ninja.data = [{
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/introduction-to-machine-learning/";
             },},{
-        id: 'social-cv',
-        title: 'CV',
-        section: 'Socials',
-        handler: () => {
-          window.open("/assets/rendercv/rendercv_output/Dunyao_Xue_CV.pdf", "_blank");
-        },
-      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
@@ -500,7 +493,7 @@ ninja.data = [{
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=91tAPrQAAAAJ", "_blank");
+          window.open("https://scholar.google.com/citations?user=https://scholar.google.com.hk/citations?user=91tAPrQAAAAJ&hl=zh-CN", "_blank");
         },
       },{
       id: 'light-theme',
