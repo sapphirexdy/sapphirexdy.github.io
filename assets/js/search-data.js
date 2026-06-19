@@ -391,26 +391,26 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-was-selected-for-china-s-top-notch-students-training-program-2-0-national-basic-disciplines",
-          title: 'I was selected for China’s Top-notch Students Training Program 2.0 (National Basic Disciplines)....',
+            },},{id: "news-i-was-selected-for-china-s-top-notch-students-training-program-2-0-in-basic-disciplines",
+          title: 'I was selected for China’s Top-notch Students Training Program 2.0 in basic disciplines....',
           description: "",
-          section: "News",},{id: "news-i-received-the-travel-award-and-being-selected-for-the-doctoral-forum-at-the-2025-annual-conference-of-the-youth-statisticians-association-of-the-national-industrial-statistics-teaching-and-research-association-and-the-3rd-international-symposium-on-statistical-theory-and-its-applications-link-the-award-was-reported-by-a-well-known-academic-platform-gouxiong-hui",
-          title: 'I received the Travel Award and being selected for the Doctoral Forum at...',
+          section: "News",},{id: "news-i-received-a-travel-award-and-was-selected-for-the-doctoral-forum-at-the-2025-annual-conference-of-the-youth-statisticians-association-of-the-national-industrial-statistics-teaching-and-research-association-and-the-3rd-international-symposium-on-statistical-theory-and-its-applications-link-the-award-was-also-reported-by-the-academic-platform-gouxiong-hui",
+          title: 'I received a Travel Award and was selected for the Doctoral Forum at...',
           description: "",
-          section: "News",},{id: "news-i-awarded-an-outstanding-poster-award-at-the-9th-student-forum-of-the-china-society-for-industrial-and-applied-mathematics-csiam",
-          title: 'I awarded an Outstanding Poster Award at the 9th Student Forum of the...',
+          section: "News",},{id: "news-i-received-an-outstanding-poster-award-at-the-9th-student-forum-of-the-china-society-for-industrial-and-applied-mathematics-csiam",
+          title: 'I received an Outstanding Poster Award at the 9th Student Forum of the...',
           description: "",
           section: "News",},{id: "news-our-paper-an-efficient-se-p-invariant-transport-metric-driven-by-polar-transport-discrepancy-based-representation-was-accepted-by-iclr",
-          title: 'Our paper “An Efficient SE(p)-Invariant Transport Metric Driven by Polar Transport Discrepancy-based Representation”...',
+          title: 'Our paper An Efficient SE(p)-Invariant Transport Metric Driven by Polar Transport Discrepancy-based Representation...',
           description: "",
           section: "News",},{id: "news-our-paper-core-elements-subsampling-for-alternating-least-squares-was-accepted-by-jcgs",
-          title: 'Our paper “Core-elements Subsampling for Alternating Least Squares” was accepted by JCGS.🔥',
+          title: 'Our paper Core-elements Subsampling for Alternating Least Squares was accepted by JCGS.',
           description: "",
           section: "News",},{id: "news-i-was-invited-to-attend-the-international-seminar-on-foundational-artificial-intelligence-faic-and-presented-a-poster-view-poster",
           title: 'I was invited to attend the International Seminar on Foundational Artificial Intelligence (FAIC)...',
           description: "",
           section: "News",},{id: "news-our-paper-breaking-the-echo-chamber-a-dynamic-ensemble-pruning-perspective-on-moe-was-accepted-by-icml",
-          title: 'Our paper “Breaking the Echo Chamber: A Dynamic Ensemble Pruning Perspective on MoE”...',
+          title: 'Our paper Breaking the Echo Chamber: A Dynamic Ensemble Pruning Perspective on MoE...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
@@ -468,6 +468,13 @@ ninja.data = [{
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/introduction-to-machine-learning/";
             },},{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/rendercv/rendercv_output/Dunyao_Xue_CV.pdf", "_blank");
+        },
+      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
@@ -493,7 +500,7 @@ ninja.data = [{
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=https://scholar.google.com.hk/citations?user=91tAPrQAAAAJ&hl=zh-CN", "_blank");
+          window.open("https://scholar.google.com/citations?user=91tAPrQAAAAJ", "_blank");
         },
       },{
       id: 'light-theme',
