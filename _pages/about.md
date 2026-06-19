@@ -56,7 +56,7 @@ My research interests include data compression, optimal transport, and ensemble 
   <section>
     <p class="home-card-label">also interested in</p>
     <h3>dataset distillation, generative models, and model compression</h3>
-    <p>Exploring compact data, compact models, and scalable generation through a statistical lens.</p>
+    <p>Committed to bringing statistical learning methods into frontier large language models.</p>
   </section>
 </div>
 

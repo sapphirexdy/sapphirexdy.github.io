@@ -266,6 +266,9 @@
       {% if entry.code %}
         <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
       {% endif %}
+      {% if poster_href %}
+        <a href="{{ poster_href }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+      {% endif %}
       {% if entry.slides %}
         {% if entry.slides contains '://' %}
           <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
@@ -280,14 +283,12 @@
 
     {% if poster_preview_path %}
       <div class="publication-poster">
-        <a href="{{ poster_href }}" aria-label="Open poster for {{ entry.title | strip_html | escape }}">
-          <img
-            class="publication-poster-img"
-            src="{{ poster_preview_path }}"
-            width="220"
-            alt="Poster preview for {{ entry.title | strip_html | escape }}"
-          >
-        </a>
+        <img
+          class="publication-poster-img"
+          src="{{ poster_preview_path }}"
+          width="220"
+          alt="Poster preview for {{ entry.title | strip_html | escape }}"
+        >
       </div>
     {% endif %}
 
