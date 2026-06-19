@@ -13,11 +13,6 @@ layout: default
       {% endif %}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
-    {% if page.social %}
-      <div class="home-social-inline" aria-label="Social links">
-        {% social_links %}
-      </div>
-    {% endif %}
   </header>
 
   <article>
@@ -82,6 +77,15 @@ layout: default
         </div>
         {% include selected_papers.liquid %}
       </section>
+    {% endif %}
+
+    <!-- Social -->
+    {% if page.social %}
+      <div class="social">
+        <div class="contact-icons">{% social_links %}</div>
+
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
