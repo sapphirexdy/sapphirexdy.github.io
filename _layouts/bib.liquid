@@ -10,7 +10,7 @@
             {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
           {%- endif -%}
           <abbr
-            class="badge rounded w-100"
+            class="badge rounded w-100 venue-{{ entry.abbr | downcase }}"
             {% if venue_style %}
               {{ venue_style }}
             {% endif -%}
@@ -22,7 +22,7 @@
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+          <abbr class="badge rounded w-100 venue-{{ entry.abbr | downcase }}">{{ entry.abbr }}</abbr>
         {% endif %}
       {% endif %}
       {% if entry.preview %}
@@ -46,7 +46,18 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  {% if entry.poster_preview %}
+    {% if site.enable_publication_thumbnails %}
+      {% assign entry_col_class = 'col-sm-7' %}
+    {% else %}
+      {% assign entry_col_class = 'col-sm-9' %}
+    {% endif %}
+  {% elsif site.enable_publication_thumbnails %}
+    {% assign entry_col_class = 'col-sm-8' %}
+  {% else %}
+    {% assign entry_col_class = 'col-sm-10' %}
+  {% endif %}
+  <div id="{{ entry.key }}" class="{{ entry_col_class }}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -241,13 +252,6 @@
       {% if entry.code %}
         <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
       {% endif %}
-      {% if entry.poster %}
-        {% if entry.poster contains '://' %}
-          <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
-        {% else %}
-          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
-        {% endif %}
-      {% endif %}
       {% if entry.slides %}
         {% if entry.slides contains '://' %}
           <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
@@ -392,4 +396,26 @@
       </div>
     {% endif %}
   </div>
+
+  {% if entry.poster_preview %}
+    {% if entry.poster_preview contains '://' %}
+      {% assign poster_preview_path = entry.poster_preview %}
+    {% else %}
+      {% assign poster_preview_path = entry.poster_preview | prepend: '/assets/img/publication_posters/' | relative_url %}
+    {% endif %}
+    {% if entry.poster %}
+      {% if entry.poster contains '://' %}
+        {% assign poster_href = entry.poster %}
+      {% else %}
+        {% assign poster_href = entry.poster | prepend: '/assets/pdf/' | relative_url %}
+      {% endif %}
+    {% else %}
+      {% assign poster_href = poster_preview_path %}
+    {% endif %}
+    <div class="col-sm-3 publication-poster">
+      <a href="{{ poster_href }}" aria-label="Open poster for {{ entry.title | strip_html | escape }}">
+        <img src="{{ poster_preview_path }}" alt="Poster preview for {{ entry.title | strip_html | escape }}">
+      </a>
+    </div>
+  {% endif %}
 </div>

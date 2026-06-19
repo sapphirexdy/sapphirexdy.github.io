@@ -3,7 +3,7 @@ layout: about
 title: About
 permalink: /
 subtitle: >
-  Working on data compression, optimal transport, and efficient large language models.
+  Staying optimistic and curious.
 
 profile:
   align: right
@@ -33,13 +33,11 @@ Welcome to my page! I am Dunyao Xue, a PhD student in Statistics at the [Institu
 
 Prior to this, I received a BSc degree in Mathematics from the [Cuiying Honors School](https://cycollege.lzu.edu.cn/), Lanzhou University.
 
-My current research sits at the intersection of statistical learning and efficient AI systems. I like building compact methods that keep the geometry of the original problem visible, whether the object is a matrix, a distribution, or a language model.
+My research interests include data compression, optimal transport, and ensemble learning. I am especially interested in applying statistical and machine learning methods to large models, with the goal of improving the performance or efficiency of model training and inference.
 
 <div class="home-tags" aria-label="Research keywords">
   <span>data compression</span>
   <span>optimal transport</span>
-  <span>subsampling</span>
-  <span>matrix factorization</span>
   <span>Mixture-of-Experts</span>
   <span>LLM decoding</span>
 </div>
@@ -47,8 +45,8 @@ My current research sits at the intersection of statistical learning and efficie
 <div class="home-highlights" aria-label="Homepage highlights">
   <section>
     <p class="home-card-label">recent papers</p>
-    <h3>JCGS first author; ICLR / ICML co-first author</h3>
-    <p>Recent work covers core-elements subsampling for ALS, SE(p)-invariant transport metrics, and dynamic ensemble pruning for MoE models.</p>
+    <h3>First/co-first author: ICML / ICLR / JCGS</h3>
+    <p>Recent work includes MP-MoE at ICML, SEINT at ICLR, and core-elements subsampling for ALS at JCGS.</p>
   </section>
   <section>
     <p class="home-card-label">currently</p>
@@ -57,15 +55,15 @@ My current research sits at the intersection of statistical learning and efficie
   </section>
   <section>
     <p class="home-card-label">also interested in</p>
-    <h3>high-dimensional compression</h3>
-    <p>Connecting statistical methodology with practical feature-space compression and efficient AI workloads.</p>
+    <h3>dataset distillation, generative models, and model compression</h3>
+    <p>Exploring compact data, compact models, and scalable generation through a statistical lens.</p>
   </section>
 </div>
 
 <div class="home-research-map" aria-label="Research map">
   <div>
     <strong>Statistical compression</strong>
-    <span>core elements, representative subsampling, matrix factorization</span>
+    <span>core elements, dataset distillation, compact statistical learning</span>
   </div>
   <div>
     <strong>Transport geometry</strong>
