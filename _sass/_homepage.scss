@@ -160,16 +160,61 @@ html[data-theme="dark"] .home-polished {
 }
 
 .home-tags span {
+  --tag-color: #9f1d2f;
+  --tag-bg: rgba(159, 29, 47, 0.075);
+  --tag-border: rgba(159, 29, 47, 0.26);
   display: inline-flex;
   align-items: center;
   min-height: 1.75rem;
   padding: 0.22rem 0.65rem;
-  border: 1px solid var(--home-accent-line);
+  border: 1px solid var(--tag-border);
   border-radius: 999px;
-  background: var(--home-accent-soft);
-  color: var(--home-accent);
+  background: var(--tag-bg);
+  color: var(--tag-color);
   font-size: 0.82rem;
   font-weight: 600;
+}
+
+.home-tags span:nth-of-type(2) {
+  --tag-color: #94620f;
+  --tag-bg: rgba(148, 98, 15, 0.085);
+  --tag-border: rgba(148, 98, 15, 0.25);
+}
+
+.home-tags span:nth-of-type(3) {
+  --tag-color: #78396f;
+  --tag-bg: rgba(120, 57, 111, 0.075);
+  --tag-border: rgba(120, 57, 111, 0.24);
+}
+
+.home-tags span:nth-of-type(4) {
+  --tag-color: #be185d;
+  --tag-bg: rgba(190, 24, 93, 0.07);
+  --tag-border: rgba(190, 24, 93, 0.24);
+}
+
+html[data-theme="dark"] .home-tags span {
+  --tag-color: #fb7185;
+  --tag-bg: rgba(251, 113, 133, 0.11);
+  --tag-border: rgba(251, 113, 133, 0.28);
+}
+
+html[data-theme="dark"] .home-tags span:nth-of-type(2) {
+  --tag-color: #fdba74;
+  --tag-bg: rgba(253, 186, 116, 0.1);
+  --tag-border: rgba(253, 186, 116, 0.25);
+}
+
+html[data-theme="dark"] .home-tags span:nth-of-type(3) {
+  --tag-color: #d8b4fe;
+  --tag-bg: rgba(216, 180, 254, 0.095);
+  --tag-border: rgba(216, 180, 254, 0.23);
+}
+
+html[data-theme="dark"] .home-tags span:nth-of-type(4) {
+  --tag-color: #f9a8d4;
+  --tag-bg: rgba(249, 168, 212, 0.095);
+  --tag-border: rgba(249, 168, 212, 0.23);
 }
 
 .home-highlights {
