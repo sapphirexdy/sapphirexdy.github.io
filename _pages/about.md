@@ -50,7 +50,7 @@ My research interests include data compression, optimal transport, and ensemble 
   </section>
   <section>
     <p class="home-card-label">currently</p>
-    <h3>statistics PhD at RUC</h3>
+    <h3>Statistics PhD, Data Science and Artificial Intelligence track</h3>
     <p>Working with Cheng Meng and Wenlin Dai at the Institute of Statistics and Big Data.</p>
   </section>
   <section>

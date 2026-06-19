@@ -1,16 +1,36 @@
 ---
 ---
-<div class="row">
+{% assign entry_abbr_slug = entry.abbr | strip | downcase %}
+{% assign poster_preview_path = null %}
+{% assign poster_href = null %}
+{% if entry.poster_preview %}
+  {% if entry.poster_preview contains '://' %}
+    {% assign poster_preview_path = entry.poster_preview %}
+  {% else %}
+    {% assign poster_preview_path = entry.poster_preview | prepend: '/assets/img/publication_posters/' | relative_url %}
+  {% endif %}
+  {% if entry.poster %}
+    {% if entry.poster contains '://' %}
+      {% assign poster_href = entry.poster %}
+    {% else %}
+      {% assign poster_href = entry.poster | prepend: '/assets/pdf/' | relative_url %}
+    {% endif %}
+  {% else %}
+    {% assign poster_href = poster_preview_path %}
+  {% endif %}
+{% endif %}
+
+<div class="row publication-row publication-{{ entry_abbr_slug }}">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
           {% if site.data.venues[entry.abbr].color != blank %}
-            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
+            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: ' !important;"' %}
           {%- endif -%}
           <abbr
-            class="badge rounded w-100 venue-{{ entry.abbr | downcase }}"
+            class="badge rounded w-100 venue-{{ entry_abbr_slug }}"
             {% if venue_style %}
               {{ venue_style }}
             {% endif -%}
@@ -22,7 +42,7 @@
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded w-100 venue-{{ entry.abbr | downcase }}">{{ entry.abbr }}</abbr>
+          <abbr class="badge rounded w-100 venue-{{ entry_abbr_slug }}">{{ entry.abbr }}</abbr>
         {% endif %}
       {% endif %}
       {% if entry.preview %}
@@ -46,18 +66,12 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  {% if entry.poster_preview %}
-    {% if site.enable_publication_thumbnails %}
-      {% assign entry_col_class = 'col-sm-7' %}
-    {% else %}
-      {% assign entry_col_class = 'col-sm-9' %}
-    {% endif %}
-  {% elsif site.enable_publication_thumbnails %}
+  {% if site.enable_publication_thumbnails %}
     {% assign entry_col_class = 'col-sm-8' %}
   {% else %}
     {% assign entry_col_class = 'col-sm-10' %}
   {% endif %}
-  <div id="{{ entry.key }}" class="{{ entry_col_class }}">
+  <div id="{{ entry.key }}" class="{{ entry_col_class }} publication-entry{% if poster_preview_path %} has-poster{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -263,6 +277,20 @@
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
     </div>
+
+    {% if poster_preview_path %}
+      <div class="publication-poster">
+        <a href="{{ poster_href }}" aria-label="Open poster for {{ entry.title | strip_html | escape }}">
+          <img
+            class="publication-poster-img"
+            src="{{ poster_preview_path }}"
+            width="220"
+            alt="Poster preview for {{ entry.title | strip_html | escape }}"
+          >
+        </a>
+      </div>
+    {% endif %}
+
     {% if site.enable_publication_badges %}
       {% assign entry_has_altmetric_badge = false %}
       {% if entry.altmetric and entry.altmetric != 'false' %}
@@ -396,26 +424,4 @@
       </div>
     {% endif %}
   </div>
-
-  {% if entry.poster_preview %}
-    {% if entry.poster_preview contains '://' %}
-      {% assign poster_preview_path = entry.poster_preview %}
-    {% else %}
-      {% assign poster_preview_path = entry.poster_preview | prepend: '/assets/img/publication_posters/' | relative_url %}
-    {% endif %}
-    {% if entry.poster %}
-      {% if entry.poster contains '://' %}
-        {% assign poster_href = entry.poster %}
-      {% else %}
-        {% assign poster_href = entry.poster | prepend: '/assets/pdf/' | relative_url %}
-      {% endif %}
-    {% else %}
-      {% assign poster_href = poster_preview_path %}
-    {% endif %}
-    <div class="col-sm-3 publication-poster">
-      <a href="{{ poster_href }}" aria-label="Open poster for {{ entry.title | strip_html | escape }}">
-        <img src="{{ poster_preview_path }}" alt="Poster preview for {{ entry.title | strip_html | escape }}">
-      </a>
-    </div>
-  {% endif %}
 </div>

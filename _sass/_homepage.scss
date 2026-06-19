@@ -362,6 +362,10 @@ html[data-theme="dark"] .home-polished {
   padding-top: 0.15rem;
 }
 
+.home-polished .publications .publication-row {
+  position: relative;
+}
+
 .home-polished .publications .abbr abbr {
   border-radius: 6px !important;
   background-color: var(--home-accent) !important;
@@ -388,18 +392,25 @@ html[data-theme="dark"] .home-polished {
   font-size: 0.78rem;
 }
 
+.home-polished .publication-entry.has-poster {
+  min-height: 10.25rem;
+  padding-right: 15.5rem;
+}
+
 .home-polished .publication-poster {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding-top: 0.15rem;
+  position: absolute;
+  top: 0.1rem;
+  right: 0;
+  width: 13.75rem;
+  max-width: 13.75rem;
 }
 
 .home-polished .publication-poster a {
   --poster-shadow-color: rgba(127, 23, 38, 0.12);
   display: block;
-  width: 100%;
-  max-width: 13.5rem;
+  width: 13.75rem;
+  max-width: 100%;
+  max-height: 9.5rem;
   overflow: hidden;
   border: 1px solid var(--global-divider-color);
   border-radius: 6px;
@@ -407,15 +418,15 @@ html[data-theme="dark"] .home-polished {
   box-shadow: 0 8px 18px var(--poster-shadow-color);
 }
 
-.home-polished .publications li:nth-child(1) .publication-poster a {
+.home-polished .publication-iclr .publication-poster a {
   --poster-shadow-color: rgba(159, 29, 47, 0.14);
 }
 
-.home-polished .publications li:nth-child(2) .publication-poster a {
+.home-polished .publication-jcgs .publication-poster a {
   --poster-shadow-color: rgba(194, 65, 12, 0.14);
 }
 
-.home-polished .publications li:nth-child(3) .publication-poster a {
+.home-polished .publication-icml .publication-poster a {
   --poster-shadow-color: rgba(190, 18, 60, 0.14);
 }
 
@@ -429,7 +440,9 @@ html[data-theme="dark"] .home-polished {
 
 .home-polished .publication-poster img {
   display: block;
-  width: 100%;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 13.75rem !important;
   max-height: 9.5rem;
   object-fit: contain;
   object-position: center top;
@@ -496,12 +509,20 @@ html[data-theme="dark"] .home-polished {
   }
 
   .home-polished .publication-poster {
-    justify-content: flex-start;
+    position: static;
+    width: 100%;
+    max-width: 12rem;
     padding-top: 0.65rem;
   }
 
   .home-polished .publication-poster a {
+    width: 100%;
     max-width: 12rem;
+  }
+
+  .home-polished .publication-entry.has-poster {
+    min-height: auto;
+    padding-right: 15px;
   }
 
   .news-meta {
