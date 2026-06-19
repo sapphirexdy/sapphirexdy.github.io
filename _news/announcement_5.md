@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper [“Core-elements Subsampling for Alternating Least Squares”](https://arxiv.org/abs/2509.18024) was accepted by JCGS.🔥
+Our paper [Core-elements Subsampling for Alternating Least Squares](https://arxiv.org/abs/2509.18024) was accepted by JCGS.

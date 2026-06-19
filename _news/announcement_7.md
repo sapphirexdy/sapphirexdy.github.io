@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper “Breaking the Echo Chamber: A Dynamic Ensemble Pruning Perspective on MoE” was accepted by ICML.🔥
+Our paper Breaking the Echo Chamber: A Dynamic Ensemble Pruning Perspective on MoE was accepted by ICML.
