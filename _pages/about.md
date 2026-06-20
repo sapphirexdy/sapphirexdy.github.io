@@ -33,7 +33,7 @@ Welcome to my page! I am Dunyao Xue, a PhD student in Statistics at the [Institu
 
 Prior to this, I received a BSc degree in Mathematics from the [Cuiying Honors School](https://cycollege.lzu.edu.cn/), Lanzhou University.
 
-My research interests include data compression, optimal transport, and ensemble learning. I am especially interested in applying statistical and machine learning methods to large models, with the goal of improving the performance or efficiency of model training and inference.
+My research interests include data compression, optimal transport, ensemble learning, and large language model architectures. I am especially interested in applying statistical and machine learning methods to large language models (LLMs), with the goal of improving the performance or efficiency of model training and inference.
 
 <div class="home-tags" aria-label="Research keywords">
   <span>data compression</span>
