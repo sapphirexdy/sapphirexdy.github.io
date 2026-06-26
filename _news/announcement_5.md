@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-3-18
+date: 2026-03-16
 inline: true
 related_posts: false
 ---
 
-Our paper [Core-elements Subsampling for Alternating Least Squares](https://arxiv.org/abs/2509.18024) was accepted by JCGS.
+I was selected for RUC's 2025-2026 "Top Innovative Talents Training Funding Program", one of two institute-wide awardees. This marks the team's second such honor after Mengyu Li.

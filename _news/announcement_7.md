@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-5-1
+date: 2026-04-23
 inline: true
 related_posts: false
 ---
 
-Our paper [Breaking the Echo Chamber: A Dynamic Ensemble Pruning Perspective on MoE](https://github.com/kxlkxl1999/MP-MoE/blob/main/ICML_camera_ready.pdf) was accepted by ICML.
+I was invited to attend the International Seminar on Foundational Artificial Intelligence (FAIC) and presented a poster. [View Poster](https://faic.cc/poster.html)

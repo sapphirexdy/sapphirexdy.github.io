@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-04-23
+date: 2026-03-18
 inline: true
 related_posts: false
 ---
 
-I was invited to attend the International Seminar on Foundational Artificial Intelligence (FAIC) and presented a poster. [View Poster](https://faic.cc/poster.html)
+Our paper [Core-elements Subsampling for Alternating Least Squares](https://arxiv.org/abs/2509.18024) was accepted by JCGS.
