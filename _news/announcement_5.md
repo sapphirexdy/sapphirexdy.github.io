@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I was selected for RUC's 2025-2026 "Top Innovative Talents Training Funding Program", one of two institute-wide awardees. This marks the team's second such honor after Mengyu Li.
+I was selected for RUC's 2025-2026 "Top Innovative Talents Training Funding Program", one of two institute-wide awardees.
