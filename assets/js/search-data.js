@@ -396,7 +396,7 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-an-efficient-se-p-invariant-transport-metric-driven-by-polar-transport-discrepancy-based-representation-was-accepted-by-iclr",
           title: 'Our paper An Efficient SE(p)-Invariant Transport Metric Driven by Polar Transport Discrepancy-based Representation...',
           description: "",
-          section: "News",},{id: "news-i-was-selected-for-ruc-s-2025-2026-top-innovative-talents-training-funding-program-one-of-two-institute-wide-awardees-this-marks-the-team-s-second-such-honor-after-mengyu-li",
+          section: "News",},{id: "news-i-was-selected-for-ruc-s-2025-2026-top-innovative-talents-training-funding-program-one-of-two-institute-wide-awardees",
           title: 'I was selected for RUC’s 2025-2026 “Top Innovative Talents Training Funding Program”, one...',
           description: "",
           section: "News",},{id: "news-our-paper-core-elements-subsampling-for-alternating-least-squares-was-accepted-by-jcgs",
