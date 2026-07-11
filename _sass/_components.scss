@@ -245,6 +245,32 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Floating pet
+
+.site-pet {
+  position: fixed;
+  right: 1.1rem;
+  bottom: 4.75rem;
+  z-index: 1020;
+  width: clamp(4.5rem, 9vw, 6.75rem);
+  pointer-events: none;
+}
+
+.site-pet img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0.35rem 0.75rem rgba(0, 0, 0, 0.18));
+}
+
+@media (max-width: 575px) {
+  .site-pet {
+    right: 0.75rem;
+    bottom: 4.35rem;
+    width: 4.4rem;
+  }
+}
+
 // Distill
 
 .distill {
