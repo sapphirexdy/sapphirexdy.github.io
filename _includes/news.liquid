@@ -14,11 +14,21 @@
         {% assign news_limit = news_size %}
       {% endif %}
       {% for item in news limit: news_limit %}
-        <article class="news-card">
+        <article class="news-card{% if item.image %} has-image{% endif %}">
           <div class="news-meta">
             <time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%b %d, %Y' }}</time>
             <span>update</span>
           </div>
+          {% if item.image %}
+            {% if item.image contains '://' %}
+              {% assign news_image_path = item.image %}
+            {% else %}
+              {% assign news_image_path = item.image | prepend: '/assets/img/' | relative_url %}
+            {% endif %}
+            <a class="news-image" href="{{ news_image_path }}" aria-label="Open photo for {{ item.date | date: '%b %d, %Y' }} news">
+              <img src="{{ news_image_path }}" alt="{{ item.image_alt | default: 'News photo' }}">
+            </a>
+          {% endif %}
           <div class="news-body">
             {% if item.inline %}
               {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
