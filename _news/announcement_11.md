@@ -10,4 +10,4 @@ images:
     alt: Presenting the MP-MoE poster at ICML 2026 in Seoul
 ---
 
-From July 6 to 11, I attended ICML 2026 in Seoul and presented our MoE work, [MP-MoE](https://github.com/kxlkxl1999/MP-MoE/blob/main/ICML_camera_ready.pdf).
+From July 6 to 11, I attended ICML 2026 in Seoul and presented our MoE work, [MP-MoE](https://openreview.net/pdf?id=7FsbfQgti4).
