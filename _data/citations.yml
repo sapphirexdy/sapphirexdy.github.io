@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-22'
+  last_updated: '2026-07-31'
 papers:
   91tAPrQAAAAJ:2osOgNQ5qMEC:
     citations: 0
@@ -11,5 +11,5 @@ papers:
     year: Unknown Year
   91tAPrQAAAAJ:qjMakFHDy7sC:
     citations: 1
-    title: Core-elements Subsampling for Alternating Least Squares
-    year: '2025'
+    title: Core-elements subsampling for alternating least squares
+    year: '2026'
