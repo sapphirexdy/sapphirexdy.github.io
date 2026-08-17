@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-08-12'
+  last_updated: '2026-08-17'
 papers:
   91tAPrQAAAAJ:2osOgNQ5qMEC:
     citations: 0
     title: An Efficient SE (p)-Invariant Transport Metric Driven by Polar Transport Discrepancy-based Representation
     year: '2026'
   91tAPrQAAAAJ:Tyk-4Ss8FVUC:
-    citations: 0
+    citations: 1
     title: 'Breaking the Echo Chamber: A Dynamic Ensemble Pruning Perspective on MoE'
     year: Unknown Year
   91tAPrQAAAAJ:qjMakFHDy7sC:
